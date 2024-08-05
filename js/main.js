@@ -15,7 +15,6 @@ const darkmode = () => {
   });
 };
 
-window.addEventListener("load", )
 
 
 const main = () => {
