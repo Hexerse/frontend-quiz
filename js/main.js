@@ -4,7 +4,7 @@ const icons = document.querySelectorAll(".icon");
 const toggleMode = document.getElementById("toggle-switch");
 const body = document.body;
 
-const darkmode = () => {
+const darkMode = () => {
   toggleMode.addEventListener("click", () => {
     //Body toggle
     body.classList.toggle("dark-mode");
@@ -15,10 +15,22 @@ const darkmode = () => {
   });
 };
 
+const mode = () => {
+  if (toggleMode.checked) {
+    toggleMode.checked = true;
 
+    body.classList.toggle("dark-mode");
+
+    icons.forEach((icon) => {
+      icon.classList.toggle("dark-switch");
+    });
+  }
+};
+
+window.addEventListener("load", mode, false);
 
 const main = () => {
-  darkmode();
+  darkMode();
 };
 
 main();
