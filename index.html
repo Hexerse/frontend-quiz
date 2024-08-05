@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Frontend quiz app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/welcome.css" />
+  </head>
+  <body class="light-mode">
+
+  <div class="toggle-wrapper">
+    <div class="toggle-container">
+      <span class="icon"></span>
+      <input type="checkbox" id="toggle-switch" class="toggle-switch"/>
+      <label for="toggle-switch" class="toggle-label"></label>
+      <span class="icon"></span>
+    </div>
+  </div>
+
+    <!-- Quiz menu start -->
+
+    <main class="frontend__quiz">
+      <header class="quiz__header">
+        <h1 class="quiz__welcome">Welcome to the Frontend Quiz!</h1>
+        <p class="quiz__getstarted">Pick a subject to get started.</p>
+      </header>
+
+      <div class="quiz__buttons">
+        <button class="buttons__choose">HTML</button>
+        <button class="buttons__choose">CSS</button>
+        <button class="buttons__choose">JavaScript</button>
+        <button class="buttons__choose">Accessibility</button>
+      </div>
+    </main>
+    <!-- Quiz menu end -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

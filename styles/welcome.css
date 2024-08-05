@@ -1,0 +1,174 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --clr-darknavy: #313e51;
+  --clr-greynavy: #626c7f;
+  --clr-lightgray: #f4f6fa;
+  --clr-navy: #3b4d66;
+  --clr-lightbluish: #abc1e1;
+  --clr-answer: #26d782;
+  --clr-wrong: #ee5454;
+
+  --font-family: "Rubik", sans-serif;
+  --fw-light: 200;
+  --fw-medium: 400;
+  --fw-bold: 600;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-family: var(--font-family);
+}
+
+.icon{
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon:nth-child(1){
+  background-image: url(/starter-code/assets/images/icon-sun-dark.svg);
+}
+
+.dark-switch:nth-child(1){
+  background-image: url(/starter-code/assets/images/icon-sun-light.svg);
+}
+
+.icon:nth-child(4){
+  background-image: url(/starter-code/assets/images/icon-moon-dark.svg);
+}
+
+.dark-switch:nth-child(4){
+  background-image: url(/starter-code/assets/images/icon-moon-light.svg);
+}
+
+.light-mode{
+  background-image: url(/starter-code/assets/images/pattern-background-mobile-light.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.dark-mode{
+  background-image: url(/starter-code/assets/images/pattern-background-mobile-dark.svg);
+  background-repeat: none;
+  background-size: cover;
+  background-color: var(--clr-darknavy);
+}
+
+.toggle-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.toggle-switch {
+  display: none;
+}
+
+.toggle-label {
+  position: relative;
+  width: 3.125rem;
+  height: 1.5625rem;
+  background-color: #ccc;
+  border-radius: 1.5625rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+.toggle-switch:checked + .toggle-label {
+  background-color: #6200ea;
+}
+
+.toggle-switch:checked + .toggle-label::before {
+  transform: translateX(25px);
+}
+
