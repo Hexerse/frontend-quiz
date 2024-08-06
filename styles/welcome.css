@@ -118,6 +118,7 @@ button:hover{
   background-image: url(/starter-code/assets/images/pattern-background-mobile-light.svg);
   background-repeat: none;
   background-size: cover;
+  background-color: #F4F6FA;
 }
 
 .dark-mode{

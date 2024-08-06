@@ -33,9 +33,11 @@ const mode = () => {
   const topicButtons = document.querySelectorAll(".buttons__topics");
   const quiz = document.querySelector(".frontend__quiz");
   if (toggleMode.checked) {
+    //Make toggle true (dark)
     toggleMode.checked = true;
-
+    
     body.classList.toggle("dark-mode");
+
     quiz.classList.toggle("dark__text");
 
     icons.forEach((icon) => {
