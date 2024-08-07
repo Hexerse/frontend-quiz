@@ -53,6 +53,8 @@ const mode = () => {
 
 window.addEventListener("load", mode, false);
 
+
+
 const main = () => {
   darkMode();
 };
