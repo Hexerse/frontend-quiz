@@ -6,6 +6,12 @@ const darkText = document.querySelector(".dark__text");
 const darkBackground = document.querySelector(".dark__background");
 const body = document.body;
 const scoreContainer = document.querySelector(".score__container");
+const topic = localStorage.topic;
+const imgDiv = document.querySelector(".head");
+const scoreTaken = localStorage.score;
+const score = document.querySelector(".score");
+
+console.log(localStorage);
 
 const darkMode = () => {
   const topicButtons = document.querySelectorAll(".buttons__topics");
@@ -34,20 +40,33 @@ const mode = () => {
 
     body.classList.toggle("dark-mode");
 
-
     scoreContainer.classList.toggle("dark__background");
+
+    scoreContainer.classList.toggle("dark__text")
 
     icons.forEach((icon) => {
       icon.classList.toggle("dark-switch");
     });
-
   }
 };
 
 window.addEventListener("load", mode, false);
 
+const generateTopic = () => {
+  imgDiv.innerHTML = `<img
+            src="./starter-code/assets/images/icon-${topic}.svg"
+            alt=""
+          />
+          <p class="topic__score__heading">${
+            topic.charAt(0).toUpperCase() + topic.slice(1)
+          }</p>`;
+  score.innerHTML = `${scoreTaken}`;
+};
+
 const main = () => {
   darkMode();
+  generateTopic();
 };
 
 main();
+

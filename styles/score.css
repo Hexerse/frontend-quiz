@@ -204,7 +204,7 @@ main{
 }
 
 .head img{
-  background-color:#f6e7ff;
+  background-color:var(--clr-greynavy);
   height: 2rem;
   height: 2rem;
   padding:0.25rem;
@@ -233,4 +233,12 @@ main{
   background-size: cover;
   background-color: var(--clr-darknavy);
   color: white;
+}
+
+.dark__text {
+  color: white;
+}
+
+.dark__background {
+  background-color: var(--clr-navy);
 }

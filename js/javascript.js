@@ -3,7 +3,7 @@ let quizzesData;
 fetch("./data.json")
   .then((data) => data.json())
   .then((json) => {
-    quizzesData = json.quizzes[3];
+    quizzesData = json.quizzes[2];
     main();
   });
 
@@ -124,7 +124,7 @@ submit.addEventListener("click", () => {
 
   //Replace Topic for other pages !!!!!!!!!!!!!!!!
   if (i === 10 && submit.innerHTML === "Next Question") {
-    localStorage.setItem("topic", "accessibility");
+    localStorage.setItem("topic", "javascript");
     window.location.href = "/score.html";
   }
 });
