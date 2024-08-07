@@ -21,13 +21,14 @@ const questionNumber = document.querySelector(".question__progress");
 const questionText = document.querySelector(".question");
 const choiceButtons = document.querySelectorAll(".question__choice");
 const options = document.querySelectorAll(".options");
-const progress = document.querySelector('.question__progress-bar');
+const progress = document.querySelector(".question__progress-bar");
 
 let i = 0;
 let choice = null;
 let questionAnswer = "";
-let answerButton = '';
-let answerButtonbackground = '';
+let answerButton = "";
+let answerButtonbackground = "";
+let score = 0;
 
 const darkMode = () => {
   const choiceButtons = document.querySelectorAll(".question__choice");
@@ -119,6 +120,12 @@ submit.addEventListener("click", () => {
   } else {
     submit.innerHTML = "Next Question";
   }
+
+  if (i === 10 && submit.innerHTML === "Next Question"){
+    localStorage.setItem("topic", "accessibility");
+    window.location.href = "/score.html";
+    console.log(localStorage)
+  }
 });
 
 const getQuestion = () => {
@@ -127,7 +134,7 @@ const getQuestion = () => {
     const options = questions.options;
     questionAnswer = questions.answer;
 
-    progress.value = i+1
+    progress.value = i + 1;
 
     //Create Question x of 10
     questionNumber.innerText = `Question ${i + 1} of 10`;
@@ -150,6 +157,11 @@ function rightorWrong() {
   if (choice === questionAnswer) {
     answerButton.classList.toggle("correct");
     answerButtonbackground.classList.toggle("correct__background");
+    if (submit.innerHTML === "Submit") {
+      score++;
+      console.log(score);
+      localStorage.setItem("score", score);
+    }
   } else {
     answerButton.classList.toggle("wrong");
     answerButtonbackground.classList.toggle("wrong__background");

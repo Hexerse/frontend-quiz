@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Frontend quiz app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/score.css" />
+    <link rel="stylesheet" href="/styles/accessibility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body class="light-mode">
+    <div class="toggle-wrapper">
+      <div class="toggle-container">
+        <span class="icon"></span>
+        <input type="checkbox" id="toggle-switch" class="toggle-switch" />
+        <label for="toggle-switch" class="toggle-label"></label>
+        <span class="icon"></span>
+      </div>
+    </div>
+    <!-- Quiz completed start -->
 
-  <!-- Quiz completed start -->
+    <main class="main">
+      <div class="score__heading">
+        <p>
+          Quiz completed <br>
+          <span class="bolded__words">You scored...</span>
+        </p>
+      </div>
 
-  Quiz completed
-  You scored...
+      <div class="score__container">
+        <div class="head">
+          <img
+            src="./starter-code/assets/images/icon-accessibility.svg"
+            alt=""
+          />
+          <p class="topic__score__heading">Accessibility</p>
+        </div>
+        <div class="paragraph__container">
+          <p class="paragraph">
+            <p class="score__paragraph">
+              <span class="score">8</span> <br />
+              out of 10
+            </p>
+          </p>
+        </div>
+      </div>
 
-  <!-- score --> out of 10
+    </main>
 
-  <!-- Quiz completed end -->
-
-</body>
+    <!-- Quiz completed end -->
+    <script src="./js/score.js"></script>
+  </body>
 </html>
