@@ -98,19 +98,19 @@ button:hover {
 }
 
 .icon:nth-child(1) {
-  background-image: url(/starter-code/assets/images/icon-sun-dark.svg);
+  background-image: url(./starter-code/assets/images/icon-sun-dark.svg);
 }
 
 .dark-switch:nth-child(1) {
-  background-image: url(/starter-code/assets/images/icon-sun-light.svg);
+  background-image: url(./starter-code/assets/images/icon-sun-light.svg);
 }
 
 .icon:nth-child(4) {
-  background-image: url(/starter-code/assets/images/icon-moon-dark.svg);
+  background-image: url(./starter-code/assets/images/icon-moon-dark.svg);
 }
 
 .dark-switch:nth-child(4) {
-  background-image: url(/starter-code/assets/images/icon-moon-light.svg);
+  background-image: url(./starter-code/assets/images/icon-moon-light.svg);
 }
 
 .toggle-wrapper {
@@ -221,14 +221,14 @@ main{
 }
 
 .light-mode {
-  background-image: url(/starter-code/assets/images/pattern-background-mobile-light.svg);
+  background-image: url(./starter-code/assets/images/pattern-background-mobile-light.svg);
   background-repeat: none;
   background-size: cover;
   background-color: #f4f6fa;
 }
 
 .dark-mode {
-  background-image: url(/starter-code/assets/images/pattern-background-mobile-dark.svg);
+  background-image: url(./starter-code/assets/images/pattern-background-mobile-dark.svg);
   background-repeat: none;
   background-size: cover;
   background-color: var(--clr-darknavy);

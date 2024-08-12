@@ -107,19 +107,19 @@ header {
 }
 
 .icon:nth-child(1) {
-  background-image: url(/starter-code/assets/images/icon-sun-dark.svg);
+  background-image: url(./starter-code/assets/images/icon-sun-dark.svg);
 }
 
 .dark-switch:nth-child(1) {
-  background-image: url(/starter-code/assets/images/icon-sun-light.svg);
+  background-image: url(./starter-code/assets/images/icon-sun-light.svg);
 }
 
 .icon:nth-child(4) {
-  background-image: url(/starter-code/assets/images/icon-moon-dark.svg);
+  background-image: url(./starter-code/assets/images/icon-moon-dark.svg);
 }
 
 .dark-switch:nth-child(4) {
-  background-image: url(/starter-code/assets/images/icon-moon-light.svg);
+  background-image: url(./starter-code/assets/images/icon-moon-light.svg);
 }
 
 .toggle-container {
@@ -178,7 +178,7 @@ header {
 
 .topic__name::before {
   content: "";
-  background-image: url(/starter-code/assets/images/icon-css.svg);
+  background-image: url(./starter-code/assets/images/icon-css.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -301,14 +301,14 @@ header {
 }
 
 .light-mode {
-  background-image: url(/starter-code/assets/images/pattern-background-mobile-light.svg);
+  background-image: url(./starter-code/assets/images/pattern-background-mobile-light.svg);
   background-repeat: none;
   background-size: cover;
   background-color: #f4f6fa;
 }
 
 .dark-mode {
-  background-image: url(/starter-code/assets/images/pattern-background-mobile-dark.svg);
+  background-image: url(./starter-code/assets/images/pattern-background-mobile-dark.svg);
   background-repeat: none;
   background-size: cover;
   background-color: var(--clr-darknavy);
@@ -323,7 +323,7 @@ header {
 }
 
 .correct{
-  background-image: url(/starter-code/assets/images/icon-correct.svg);
+  background-image: url(./starter-code/assets/images/icon-correct.svg);
   background-repeat: no-repeat;
   background-position: right;
   border: 2px solid #26D782;
@@ -335,7 +335,7 @@ header {
 }
 
 .wrong{
-  background-image: url(/starter-code/assets/images/icon-incorrect.svg);
+  background-image: url(./starter-code/assets/images/icon-incorrect.svg);
   background-repeat: no-repeat;
   background-position: right;
   border: 2px solid #EE5454;

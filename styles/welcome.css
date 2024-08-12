@@ -99,30 +99,30 @@ button:hover{
 }
 
 .icon:nth-child(1){
-  background-image: url(/starter-code/assets/images/icon-sun-dark.svg);
+  background-image: url(./starter-code/assets/images/icon-sun-dark.svg);
 }
 
 .dark-switch:nth-child(1){
-  background-image: url(/starter-code/assets/images/icon-sun-light.svg);
+  background-image: url(./starter-code/assets/images/icon-sun-light.svg);
 }
 
 .icon:nth-child(4){
-  background-image: url(/starter-code/assets/images/icon-moon-dark.svg);
+  background-image: url(./starter-code/assets/images/icon-moon-dark.svg);
 }
 
 .dark-switch:nth-child(4){
-  background-image: url(/starter-code/assets/images/icon-moon-light.svg);
+  background-image: url(./starter-code/assets/images/icon-moon-light.svg);
 }
 
 .light-mode{
-  background-image: url(/starter-code/assets/images/pattern-background-mobile-light.svg);
+  background-image: url(./starter-code/assets/images/pattern-background-mobile-light.svg);
   background-repeat: none;
   background-size: cover;
   background-color: #F4F6FA;
 }
 
 .dark-mode{
-  background-image: url(/starter-code/assets/images/pattern-background-mobile-dark.svg);
+  background-image: url(./starter-code/assets/images/pattern-background-mobile-dark.svg);
   background-repeat: none;
   background-size: cover;
   background-color: var(--clr-darknavy);
@@ -236,7 +236,7 @@ button:hover{
 
 .buttons__topics:nth-child(1) .topics::before{
   content: '';
-  background-image: url(/starter-code/assets/images/icon-html.svg);
+  background-image: url(./starter-code/assets/images/icon-html.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -248,7 +248,7 @@ button:hover{
 
 .buttons__topics:nth-child(2) .topics::before{
   content: '';
-  background-image: url(/starter-code/assets/images/icon-css.svg);
+  background-image: url(./starter-code/assets/images/icon-css.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -260,7 +260,7 @@ button:hover{
 
 .buttons__topics:nth-child(3) .topics::before{
   content: '';
-  background-image: url(/starter-code/assets/images/icon-js.svg);
+  background-image: url(./starter-code/assets/images/icon-js.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -272,7 +272,7 @@ button:hover{
 
 .buttons__topics:nth-child(4) .topics::before{
   content: '';
-  background-image: url(/starter-code/assets/images/icon-accessibility.svg);
+  background-image: url(./starter-code/assets/images/icon-accessibility.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
